@@ -8,7 +8,8 @@ function Pizza() {
 var placeOrder = new Pizza();
 
 Pizza.prototype.calculatePrice = function() {
-  return this.pizzaSize + this.toppings === this.totalPrice;
+  this.totalPrice = this.pizzaSize + this.toppings;
+  return this.totalPrice;
 };
 
 //front-end logic
@@ -16,11 +17,11 @@ $(document).ready(function() {
   $("form#selections-made").submit(function(event) {
     event.preventDefault();
     // size
-    placeOrder.pizzaSize = parseInt($('input[name="size"]:checked', '.selections-made').val());
+    placeOrder.pizzaSize = parseInt($('input[name="size"]:checked', '#selections-made').val());
     // toppings
     $("input:checkbox[name=topping]:checked").each(function() {
       var toppingsChosen = parseInt($(this).val());
-      placeOrder.toppings++;
+      placeOrder.toppings += toppingsChosen;
     });
 
     placeOrder.calculatePrice();

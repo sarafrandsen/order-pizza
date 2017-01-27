@@ -1,0 +1,16 @@
+header {
+}
+
+.choose-size {
+  background-color: #E7CECE;
+  height: 10%;
+}
+
+.choose-toppings {
+  background-color: #958A9A;
+  height: 50%;
+}
+
+.selections-and-price-display {
+  background-color: #E4E5CC;
+}
