@@ -1,31 +1,51 @@
 body {
   color: #196179;
+  font-family: 'Cabin', sans-serif;
 }
 .cute-header {
   font-family: 'Pacifico', cursive;
   font-size: 80px;
   text-align: center;
+  line-height: 90px;
   background-image: url("../img/banner-pizza.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  padding: 25px;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
-.choose-size {
-  height 200px;
-  border: 5px solid #196179;
-  border-radius: 20%;
+.choose-size, .choose-toppings, .total-price {
+  font-size: 40px;
+  font-family: 'Cabin', sans-serif;
+  border: 5px solid;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  padding: 20px;
 }
-.radio {
-  font-size: 25px;
+.bio {
+  font-size: 20px;
+  font-family: 'Cabin', sans-serif;
+  border: 5px solid;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+.radio{
+  font-size: 30px;
   text-align: center;
 }
-.toppings {
-  text-align: left;
+label {
+  font-size: 30px;
 }
-span, label {
-  font-family: 'Cabin', sans-serif;
-}
-button {
+.btn {
+  color: #DC0000;
+  width: 400px;
+  height: 80px;
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  border: 4px solid gray;
+  border-radius: 20px;
+  background-color: #F5F5F5;
   text-align: center;
 }

@@ -11,40 +11,40 @@
   <body>
     <div class="container">
       <!-- header/title -->
-      <div class="cute-header">
+      <h1 class="cute-header">
         Miss Sugarcreek's Specialty<br>Hand-Crafted Pizzas
-      </div>
+      </h1>
       <!-- customize pizza -->
       <div class="row">
-        <div class="col-md-5 customize-pizza">
-          <!-- size -->
+        <div class="customize-pizza col-md-7">
           <form id="selections-made">
+          <!-- size -->
             <div class="choose-size">
               <!-- radio buttons here -->
-              <span>What size would you like?</span>
-              <p class="radio">
-              <label><input type="radio" name="size" value="15">Small</label>
-              <label><input type="radio" name="size" value="20">Medium</label>
-              <label><input type="radio" name="size" value="25">Large</label>
-              </p>
+              <p>What size would you like?</p>
+              <div>
+                <label class="radio radio-inline"><input type="radio" name="size" value="15">Small</label>
+                <label class="radio radio-inline"><input type="radio" name="size" value="20">Medium</label>
+                <label class="radio radio-inline"><input type="radio" name="size" value="25">Large</label>
+              </div>
             </div>
           <!-- toppings -->
             <div class="choose-toppings">
               <!-- check boxes here -->
-              <div class="col-md-6 toppings">
-                <label><input type="checkbox" name = "topping" value="1">Manchego Cheese</label>
-                <label><input type="checkbox" name = "topping" value="1">Lemon and Smoked Mozzarella</label>
-                <label><input type="checkbox" name = "topping" value="1">Ricotta and Honey</label>
-                <label><input type="checkbox" name = "topping" value="1">Rosemary and Figs</label>
-              </div>
-              <div class="col-md-6 toppings">
-                <label><input type="checkbox" name = "topping" value="1">Whisky-Barrel-Aged Maple Syrup</label>
-                <label><input type="checkbox" name = "topping" value="1">Balsamic Onion</label>
-                <label><input type="checkbox" name = "topping" value="1">Blueberry-Honey-Caramelized Onion</label>
-                <label><input type="checkbox" name = "topping" value="1">Pepperoni</label>
+              <p>Select a few toppings!</p>
+              <div class="checkbox checkbox-danger">
+                <label><input type="checkbox" name="topping" value="3">Manchego Cheese</label><br>
+                <label><input type="checkbox" name="topping" value="3">Lemon and Smoked Mozzarella</label><br>
+                <label><input type="checkbox" name="topping" value="3">Ricotta and Honey</label><br>
+                <label><input type="checkbox" name="topping" value="3">Rosemary and Figs</label><br>
+                <label><input type="checkbox" name="topping" value="3">Whisky-Barrel-Aged Maple Syrup</label><br>
+                <label><input type="checkbox" name="topping" value="3">Balsamic Onion</label><br>
+                <label><input type="checkbox" name="topping" value="3">Blueberry-Honey-Caramelized Onion</label><br>
+                <label><input type="checkbox" name="topping" value="3">Pepperoni</label>
               </div>
             </div>
-            <button type="submit" class="btn btn-block">Place Order</button>
+            <!-- submit -->
+            <p><button type="submit" class="btn btn-block">Suge's got you covered!</button></p>
           </form>
         </div>
         <!-- selections made and price -->
@@ -58,9 +58,9 @@
           </div>
         </div>
         <!-- description of project and bio -->
-        <div class="col-md-2 project-and-bio">
-        </div>
+        <!-- <div class="col-md-2 project-and-bio">
+        </div> -->
       </div>
     </div>
   </body>
-</html>
+</html>3
