@@ -25,7 +25,7 @@ $(document).ready(function() {
       pizzaOrder.toppings += toppingsChosen;
     });
 
-    if (isNaN(pizzaOrder)) {
+    if (isNaN(pizzaOrder.pizzaSize)) {
       alert("Please select a pizza size.");
       return;
     }
