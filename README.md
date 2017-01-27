@@ -11,7 +11,7 @@ This is a simple pizza ordering web page created to demonstrate understanding of
 
 * There are three size options: personal, medium, and large.
 * Each size will be assigned a base price.
-* If a size is not selected, the default selection and price will be "medium".
+* If a size is not selected, the default selection and price will be "small".
 
 **User selects their toppings using checkboxes.**
 
