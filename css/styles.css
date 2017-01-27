@@ -15,7 +15,7 @@ body {
   margin-top: 30px;
   margin-bottom: 40px;
 }
-.choose-size, .choose-toppings, .display-cost, .bio {
+.choose-size, .choose-toppings, .display-cost, .bio, .display-filler {
   font-size: 40px;
   font-family: 'Cabin', sans-serif;
   border: 5px solid #DC0000;
@@ -53,4 +53,10 @@ img {
 }
 #final-pizza-price {
   color: #DC0000;
+}
+strong {
+  color: #DC0000;
+}
+.display-cost {
+  display: none;
 }
