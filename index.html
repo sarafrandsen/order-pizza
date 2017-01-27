@@ -28,14 +28,14 @@
             <div class="choose-toppings">
               <!-- check boxes here -->
               <div class="toppings">
-                <label><input type="checkbox" value="1">Manchego Cheese</label>
-                <label><input type="checkbox" value="1">Lemon and Smoked Mozzarella</label>
-                <label><input type="checkbox" value="1">Ricotta and Honey</label>
-                <label><input type="checkbox" value="1">Rosemary and Figs</label>
-                <label><input type="checkbox" value="1">Whisky-Barrel-Aged Maple Syrup</label>
-                <label><input type="checkbox" value="1">Balsamic Onion</label>
-                <label><input type="checkbox" value="1">Blueberry-Honey-Caramelized Onion</label>
-                <label><input type="checkbox" value="1">Pepperoni</label>
+                <label><input type="checkbox" name = "topping" value="1">Manchego Cheese</label>
+                <label><input type="checkbox" name = "topping" value="1">Lemon and Smoked Mozzarella</label>
+                <label><input type="checkbox" name = "topping" value="1">Ricotta and Honey</label>
+                <label><input type="checkbox" name = "topping" value="1">Rosemary and Figs</label>
+                <label><input type="checkbox" name = "topping" value="1">Whisky-Barrel-Aged Maple Syrup</label>
+                <label><input type="checkbox" name = "topping" value="1">Balsamic Onion</label>
+                <label><input type="checkbox" name = "topping" value="1">Blueberry-Honey-Caramelized Onion</label>
+                <label><input type="checkbox" name = "topping" value="1">Pepperoni</label>
               </div>
             </div>
             <button type="submit" class="btn">Place Order</button>
@@ -45,7 +45,8 @@
         <div class="col-md-5 selections-and-price-display">
           <!-- selections display -->
           <div class="selections-made-display">
-            <p><span id="list-pizza-selections"></span><p>
+            <p><span id="final-pizza-size"></span><p>
+            <p><span id="final-pizza-toppings"></span><p>
           </div>
           <!-- price display -->
           <div class="price-display">
