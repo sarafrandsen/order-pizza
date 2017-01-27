@@ -1,8 +1,8 @@
 // //business-logic
-function Pizza(size, total) {
-  this.pizzaSize = size;
+function Pizza() {
+  this.pizzaSize = 0;
   this.toppings = 0;
-  this.totalPrice = total;
+  this.totalPrice = 0;
 };
 
 var placeOrder = new Pizza();
@@ -16,14 +16,14 @@ $(document).ready(function() {
   $("form#selections-made").submit(function(event) {
     event.preventDefault();
     // size
-    order.pizzaSize = parseInt($('input[name="size"]:checked', '.selections-made').val());
+    placeOrder.pizzaSize = parseInt($('input[name="size"]:checked', '.selections-made').val());
     // toppings
     $("input:checkbox[name=topping]:checked").each(function() {
       var toppingsChosen = parseInt($(this).val());
-      order.toppings++;
+      placeOrder.toppings++;
     });
 
 
-    $("#final-pizza-price").text(totalPrice);
+    $("#final-pizza-price").text(placeOrder.calculatePrice);
   });
 });
