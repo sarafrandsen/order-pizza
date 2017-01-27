@@ -25,6 +25,11 @@ $(document).ready(function() {
       pizzaOrder.toppings += toppingsChosen;
     });
 
+    if (isNaN(pizzaOrder)) {
+      alert("Please select a pizza size.");
+      return;
+    }
+
     pizzaOrder.calculatePrice();
 
     $("#final-pizza-price").text(pizzaOrder.totalPrice);

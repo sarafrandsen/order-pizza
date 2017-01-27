@@ -1,4 +1,4 @@
-# Weird-DOUGH Pizza Delivery
+# Sugarcreek's Specialty Hand-Crafted Pizza
 ## by Sara Frandsen
 
 ## Description
