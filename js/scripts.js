@@ -8,7 +8,7 @@ function Pizza() {
 var placeOrder = new Pizza();
 
 Pizza.prototype.calculatePrice = function() {
-  return this.pizzaSize += this.toppings;
+  return this.pizzaSize + this.toppings === this.totalPrice;
 };
 
 //front-end logic
@@ -23,7 +23,8 @@ $(document).ready(function() {
       placeOrder.toppings++;
     });
 
+    placeOrder.calculatePrice();
 
-    $("#final-pizza-price").text(placeOrder.calculatePrice);
+    $("#final-pizza-price").text(placeOrder.totalPrice);
   });
 });
