@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Pacifico|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Pacifico" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" style="text/css">
     <link href="css/styles.css" rel="stylesheet" style="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Weird-DOUGH Pizza</title>
+    <title>Pupperoni Pizza</title>
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <!-- header/title -->
-        <header></header>
+      <!-- header/title -->
+      <div class="cute-header">
+        Miss Sugarcreek's Specialty<br>Hand-Crafted Pizzas
       </div>
       <!-- customize pizza -->
       <div class="row">
@@ -21,32 +21,37 @@
           <form id="selections-made">
             <div class="choose-size">
               <!-- radio buttons here -->
+              <span>What size would you like?</span>
+              <p class="radio">
               <label><input type="radio" name="size" value="15">Small</label>
               <label><input type="radio" name="size" value="20">Medium</label>
               <label><input type="radio" name="size" value="25">Large</label>
+              </p>
             </div>
           <!-- toppings -->
             <div class="choose-toppings">
               <!-- check boxes here -->
-              <div class="toppings">
+              <div class="col-md-6 toppings">
                 <label><input type="checkbox" name = "topping" value="1">Manchego Cheese</label>
                 <label><input type="checkbox" name = "topping" value="1">Lemon and Smoked Mozzarella</label>
                 <label><input type="checkbox" name = "topping" value="1">Ricotta and Honey</label>
                 <label><input type="checkbox" name = "topping" value="1">Rosemary and Figs</label>
+              </div>
+              <div class="col-md-6 toppings">
                 <label><input type="checkbox" name = "topping" value="1">Whisky-Barrel-Aged Maple Syrup</label>
                 <label><input type="checkbox" name = "topping" value="1">Balsamic Onion</label>
                 <label><input type="checkbox" name = "topping" value="1">Blueberry-Honey-Caramelized Onion</label>
                 <label><input type="checkbox" name = "topping" value="1">Pepperoni</label>
               </div>
             </div>
-            <button type="submit" class="btn">Place Order</button>
+            <button type="submit" class="btn btn-block">Place Order</button>
           </form>
         </div>
         <!-- selections made and price -->
         <div class="col-md-5 selections-and-price-display">
           <!-- selections display -->
           <div class="selections-made-display">
-            <p><span id="final-pizza-price"></span><p>
+            <p>The total cost of your order will be $<span id="final-pizza-price"></span>.<p>
           </div>
           <!-- price display -->
           <div class="price-display">

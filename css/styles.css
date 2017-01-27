@@ -1,16 +1,31 @@
-header {
+body {
+  color: #196179;
 }
-
+.cute-header {
+  font-family: 'Pacifico', cursive;
+  font-size: 80px;
+  text-align: center;
+  background-image: url("../img/banner-pizza.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom: 40px;
+}
 .choose-size {
-  background-color: #E7CECE;
-  height: 10%;
+  height 200px;
+  border: 5px solid #196179;
+  border-radius: 20%;
 }
-
-.choose-toppings {
-  background-color: #958A9A;
-  height: 50%;
+.radio {
+  font-size: 25px;
+  text-align: center;
 }
-
-.selections-and-price-display {
-  background-color: #E4E5CC;
+.toppings {
+  text-align: left;
+}
+span, label {
+  font-family: 'Cabin', sans-serif;
+}
+button {
+  text-align: center;
 }
