@@ -15,16 +15,8 @@ body {
   margin-top: 30px;
   margin-bottom: 40px;
 }
-.choose-size, .choose-toppings, .total-price {
+.choose-size, .choose-toppings, .display-cost, .bio {
   font-size: 40px;
-  font-family: 'Cabin', sans-serif;
-  border: 5px solid;
-  border-radius: 25px;
-  margin-bottom: 15px;
-  padding: 20px;
-}
-.bio {
-  font-size: 20px;
   font-family: 'Cabin', sans-serif;
   border: 5px solid;
   border-radius: 25px;
@@ -48,4 +40,10 @@ label {
   border-radius: 20px;
   background-color: #F5F5F5;
   text-align: center;
+}
+.bio {
+  overflow-y: auto;
+  direction: ltr;
+  height: 580px;
+  font-size: 15px;
 }
