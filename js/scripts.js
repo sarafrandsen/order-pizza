@@ -1,11 +1,11 @@
 // //business-logic
 function Pizza() {
   this.pizzaSize = 0;
-  this.toppings = 0;
+  this.toppings =0;
   this.totalPrice = 0;
 };
 
-var placeOrder = new Pizza();
+var pizzaOrder = new Pizza();
 
 Pizza.prototype.calculatePrice = function() {
   this.totalPrice = this.pizzaSize + this.toppings;
@@ -17,15 +17,16 @@ $(document).ready(function() {
   $("form#selections-made").submit(function(event) {
     event.preventDefault();
     // size
-    placeOrder.pizzaSize = parseInt($('input[name="size"]:checked', '#selections-made').val());
+    pizzaOrder.pizzaSize = parseInt($('input[name="size"]:checked', '#selections-made').val());
     // toppings
+    pizzaOrder.toppings = 0;
     $("input:checkbox[name=topping]:checked").each(function() {
       var toppingsChosen = parseInt($(this).val());
-      placeOrder.toppings += toppingsChosen;
+      pizzaOrder.toppings += toppingsChosen;
     });
 
-    placeOrder.calculatePrice();
+    pizzaOrder.calculatePrice();
 
-    $("#final-pizza-price").text(placeOrder.totalPrice);
+    $("#final-pizza-price").text(pizzaOrder.totalPrice);
   });
 });
