@@ -36,7 +36,7 @@ This is a simple pizza ordering web page created to demonstrate understanding of
 
 ## Credit
 
-
+Photo credit goes to my husband Jamey DeOrio, 2016.
 
 ## Contact information
 
