@@ -47,7 +47,7 @@ You can also follow me on GitHub at [https://github.com/sarafrandsen]
 
 ## Pages link
 
-[Click here](sarafrandsen.github.io/get-pizza) to visit the webpage and try the app out for yourself!
+[Click here](sarafrandsen.github.io/order-pizza) to visit the webpage and try the app out for yourself!
 
 ## Legal
 MIT License
