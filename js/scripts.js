@@ -32,6 +32,8 @@ $(document).ready(function() {
 
     pizzaOrder.calculatePrice();
 
-    $("#final-pizza-price").text(pizzaOrder.totalPrice);
+    $("#final-pizza-price").text(pizzaOrder.totalPrice)
+    $(".display-cost").show();
+    $(".display-filler").hide();
   });
 });

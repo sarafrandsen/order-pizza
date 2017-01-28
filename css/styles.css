@@ -60,3 +60,7 @@ strong {
 .display-cost {
   display: none;
 }
+.display-filler {
+  font-size: 80px;
+  text-align: center;
+}
